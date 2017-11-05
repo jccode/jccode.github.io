@@ -1,0 +1,107 @@
+.item .item-add-content .item-add-content-inner img {
+  height: 190px;
+  width: auto; }
+
+.item-account .item-overlay {
+  background: rgba(104, 127, 128, 0.6) no-repeat 0 0;
+  /* opacity: 0.8; */ }
+
+.item .item-overlay {
+  color: #fff;
+  text-align: center;
+  padding: 30px 5px; }
+  .item .item-overlay dl {
+    display: inline-block; }
+  .item .item-overlay dt, .item .item-overlay dd {
+    margin-bottom: 10px; }
+  .item .item-overlay dt {
+    text-transform: uppercase;
+    width: 80px;
+    float: left;
+    text-align: right;
+    /* margin: 5px 15px 5px 5px; */ }
+  .item .item-overlay dd {
+    text-align: left;
+    clear: right;
+    margin-left: 100px;
+    min-width: 80px; }
+
+.tack-btn {
+  cursor: pointer; }
+  .tack-btn.active {
+    color: #34d293; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px;
+  border-color: #c00000 transparent transparent #c00000;
+  float: left;
+  position: absolute;
+  top: 8px;
+  border-radius: 10px 0px 0px 0px; }
+  .triangle:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 155px;
+    top: -55px;
+    left: 54px;
+    transform: rotate(45deg);
+    transform-origin: left top;
+    box-shadow: 2px 1px 6px 1px red; }
+
+.trapezoid {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 80px;
+  height: 0;
+  border: 26px solid rgba(0, 0, 0, 0);
+  border-bottom-color: #1abc9c;
+  font: normal normal bold 100%/normal Arial, Helvetica, sans-serif;
+  color: #070707;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transform: rotateY(1.1459155903deg) rotateZ(407.9459501331deg);
+  transform: rotateY(1.1459155903deg) rotateZ(407.9459501331deg); }
+
+.item-ss-accout {
+  min-height: 200px;
+  border: 1px solid #f00;
+  position: relative; }
+  .item-ss-accout .toggle-qrcode {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+.flip-container {
+  /* entire container, keeps perspective */
+  perspective: 1000px;
+  /* flip the pane when hovered */
+  /* flip speed goes here */
+  /* hide back of pane during swap */
+  /* front pane, placed above back */
+  /* back, initially hidden pane */ }
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg); }
+  .flip-container, .flip-container .front, .flip-container .back {
+    width: 320px;
+    height: 480px; }
+  .flip-container .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative; }
+  .flip-container .front, .flip-container .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .flip-container .front {
+    z-index: 2;
+    transform: rotateY(0deg); }
+  .flip-container .back {
+    transform: rotateY(180deg); }
+
+/*# sourceMappingURL=styles2.css.map */

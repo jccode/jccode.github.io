@@ -1,14 +1,14 @@
 /* ================================
 ===  BACKGROUND SLIDER        ====
-================================= */
-$.vegas('slideshow', {
-  delay:7000,
-  backgrounds:[
-    { src:'images/backgrounds/bg1.jpg', fade:1000 },
-    { src:'images/backgrounds/bg2.jpg', fade:1000 },
-    { src:'images/backgrounds/bg3.jpg', fade:1000 }
-  ]
-});
+ ================================= */
+// $.vegas('slideshow', {
+//   delay:7000,
+//   backgrounds:[
+//     { src:'images/backgrounds/bg1.jpg', fade:1000 },
+//     { src:'images/backgrounds/bg2.jpg', fade:1000 },
+//     { src:'images/backgrounds/bg3.jpg', fade:1000 }
+//   ]
+// });
       
    
 /* =================================
@@ -203,3 +203,20 @@ $(".skill2").knob({
 
 new WOW().init();
 
+
+
+/* =================================
+===    tack QR Code             ====
+=================================== */
+
+$(function() {
+
+    $(".tack-btn").on('click', function(event) {
+        var $this = $(this),
+            $item = $this.parents(".item");
+        $this.toggleClass("active");
+        $item.toggleClass("hover");
+        console.log("tack button click.");
+    });
+
+});

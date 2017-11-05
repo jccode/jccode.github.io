@@ -1188,7 +1188,7 @@ width: -webkit-calc(100% / 2);
 	-webkit-transition: all 0.3s ease-in-out;
 	        transition: all 0.3s ease-in-out;
 }
-.item:hover .item-content {
+.item:hover .item-content, .item.hover .item-content {
 	-webkit-transform: translate(0,0);
 	-ms-transform: translate(0,0);
 	        transform: translate(0,0);
@@ -1213,7 +1213,7 @@ width: -webkit-calc(100% / 2);
 	-webkit-transition: all 0.3s ease-in-out;
 	        transition: all 0.3s ease-in-out;
 }
-.item:hover .item-add-content {
+.item:hover .item-add-content, .item.hover .item-add-content {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);
 	opacity: 1;
