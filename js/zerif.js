@@ -1,6 +1,7 @@
 /* ================================
 ===  BACKGROUND SLIDER        ====
  ================================= */
+
 // $.vegas('slideshow', {
 //   delay:7000,
 //   backgrounds:[
@@ -103,6 +104,7 @@ var scrollAnimationTime = 1200,
 ===  PROJECT LOADING           ====
 ================================= */
 
+/*
 jQuery(document).ready(function($) {
     $('.more').on('click', function(event) {
         event.preventDefault();
@@ -139,6 +141,8 @@ jQuery(document).ready(function($) {
         },800);
     });
 });
+ */
+
 
 /* ================================
 ===  PARALLAX                  ====
@@ -206,7 +210,7 @@ new WOW().init();
 
 
 /* =================================
-===    tack QR Code             ====
+===    Tack QR Code             ====
 =================================== */
 
 $(function() {
@@ -220,3 +224,53 @@ $(function() {
     });
 
 });
+
+
+
+/* =================================
+===      Load content           ====
+=================================== */
+
+$(function() {
+
+    $('#ss-download').on('click', function(event) {
+        event.preventDefault();
+
+        var href = $(this).attr('href') + ' .single-project',
+            portfolioList = $('#focus-content'),
+            content = $('#loaded-content');
+
+        portfolioList.animate({'marginLeft':'-120%'},{duration:400,queue:false});
+        portfolioList.fadeOut(400);
+        setTimeout(function(){ $('#loader').show(); },400);
+        setTimeout(function(){
+            content.load(href, function() {
+                $('#loaded-content meta').remove();
+                $('#loader').hide();
+                content.fadeIn(600);
+                $('#back-button').fadeIn(600);
+            });
+        },800);
+
+    });
+
+    $('#back-button').on('click', function(event) {
+        event.preventDefault();
+
+        var portfolioList = $('#focus-content'),
+            content = $('#loaded-content');
+
+        content.fadeOut(400);
+        $('#back-button').fadeOut(400);
+        setTimeout(function(){
+            portfolioList.animate({'marginLeft':'0'},{duration:400,queue:false});
+            portfolioList.fadeIn(600);
+        },800);
+    });
+
+});
+
+
+
+
+

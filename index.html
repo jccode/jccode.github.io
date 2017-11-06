@@ -140,12 +140,14 @@
 	<!-- / END SECTION HEADER -->
 	
 	<!-- 4 FOCUS BOXES -->
-	<div class="row">
+	<div class="row" id="focus-content">
 		
 		<!-- FIRST FOCUS BOXES -->
 		<div class="col-lg-3 col-sm-3 focus-box green wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
             <div class="service-icon">
-				<i class="pixeden pd-icon-download"></i> <!-- FOCUS ICON-->
+                <a href="project.html" id="ss-download">
+                    <i class="pixeden pd-icon-download"></i> <!-- FOCUS ICON-->
+                </a>
 			</div>
 			<h5 class="green-border-bottom">安装 Shadowsocks 客户端</h5> <!-- FOCUS HEADING -->
 		</div>
@@ -153,7 +155,7 @@
 		
 		<div class="col-lg-3 col-sm-3 focus-box red wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
 			<div class="service-icon">
-				<span class="pixeden pd-icon-user"</span>
+				<a href="#free"><span class="pixeden pd-icon-user"</span></a>
 			</div>
             <h5 class="red-border-bottom">获取 Shadowsocks 账号</h5>
 		</div>
@@ -173,7 +175,13 @@
 		</div>
 	</div>
 	<!-- / END 4 FOCUS BOXES -->
-	
+
+    
+    <!-- PROJECT DETAILS WILL BE LOADED HERE -->
+	<div id="loaded-content"></div>
+
+    <a id="back-button" class="red-btn" href="#"><i class="icon-fontawesome-webfont-27"></i> Go Back</a>
+    
 </div>
 </section>
 
@@ -344,80 +352,6 @@
 	</div>
 </div>
 </section>  <!-- / END SEPARATOR -->
-
-
-<!-- =========================
-   WORKS SECTION      
-============================== -->
-
-<section class="works" id="works">
-<div class="container">
-	
-	<!-- SECTION HEADER -->
-	<div class="section-header">
-		
-		<!-- SECTION TITLE -->
-		<h2 class="dark-text">Portfolio</h2>
-		
-		<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
-		<h6>
-			We have designed and developed many awesome products. Just take a look. 
-		</h6>
-	</div>
-	<!-- / END SECTION HEADER -->
-	<div class="row projects">
-	<div id="loader">
-	    <div class="loader-icon"></div>
-	</div>
-	<div class="col-md-12" id="portfolio-list">
-		<!-- PORTFOLIO ITEMS-->
-		<ul class="cbp-rfgrid">
-		
-        <!-- PROJECT -->	
-        <li class="wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-        <a href="project.html" class="more"><img src="images/portfolio/1.jpg"  alt="project"/>
-			<div class="project-info">
-				<div class="project-details">
-					<h5 class="white-text red-border-bottom">
-					Project Title </h5>
-					<div class="details white-text">
-						Web Design
-					</div>
-				</div>
-			</div>
-			</a>
-        </li>
-        <!-- / PROJECT -->
-        
-        <!-- PROJECT -->	
-        <li class="wow fadeInDown animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-        <a href="project.html" class="more"><img src="images/portfolio/2.jpg" alt="project" />
-			<div class="project-info">
-				<div class="project-details">
-					<h5 class="white-text red-border-bottom">
-					Project Title </h5>
-					<div class="details white-text">
-						Web Design
-					</div>
-				</div>
-			</div>
-			</a>
-        </li>
-        <!-- / PROJECT -->		
-
-        <!-- ... -->
-		</ul>
-	</div>
-	<!-- END OF PORTFOLIO ITEMS-->
-</div>
-	
-	<!-- PROJECT DETAILS WILL BE LOADED HERE -->
-	<div id="loaded-content"></div>
-
-    <a id="back-button" class="red-btn" href="#"><i class="icon-fontawesome-webfont-27"></i> Go Back</a>
-	
-</div> <!-- / END CONTAINER -->
-</section> <!-- / END WORKS SECTION -->
 
 
 
